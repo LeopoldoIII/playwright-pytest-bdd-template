@@ -2,6 +2,7 @@
   "files.associations": {
     "*.feature": "feature"
   },
+  "gherkin-behave.featuresPath": "no_behave",
   "cucumberautocomplete.steps": [
     "tests/step_defs/**/*.py"
   ],
