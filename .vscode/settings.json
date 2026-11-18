@@ -1,4 +1,7 @@
 {
+  "files.associations": {
+    "*.feature": "feature"
+  },
   "cucumberautocomplete.steps": [
     "tests/step_defs/**/*.py"
   ],
@@ -18,6 +21,17 @@
   ],
   "cucumber.glue": [
     "tests/step_defs/**/*.py"
+  ],
+  "cucumber.parameterTypes": [
+    { "name": "username", "regexp": ".*" },
+    { "name": "password", "regexp": ".*" },
+    { "name": "expected_message", "regexp": ".*" },
+    { "name": "user_id", "regexp": ".*" },
+    { "name": "status_code:d", "regexp": "\\d+" },
+    { "name": "expected_username", "regexp": ".*" },
+    { "name": "first_name", "regexp": ".*" },
+    { "name": "last_name", "regexp": ".*" },
+    { "name": "expected_first_name", "regexp": ".*" }
   ],
   "editor.quickSuggestions": {
     "comments": false,
