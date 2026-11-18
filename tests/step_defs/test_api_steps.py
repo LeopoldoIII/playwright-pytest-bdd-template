@@ -19,11 +19,7 @@ def step_api_get_user(
     api_response_holder["response"] = res
 
 
-@when(
-    parsers.parse(
-        'the user creates a new user with firstName "{first_name}" and lastName "{last_name}"'
-    )
-)
+@when(parsers.parse('the user creates a new user with firstName "{first_name}" and lastName "{last_name}"'))
 def step_api_create_user(
     api_client: APIRequestContext,
     api_response_holder: Dict[str, Any],

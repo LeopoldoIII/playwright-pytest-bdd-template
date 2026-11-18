@@ -3,14 +3,21 @@
     "tests/step_defs/**/*.py"
   ],
   "cucumberautocomplete.syncfeatures": "features/**/*.feature",
-  "cucumberautocomplete.gherkinDefinitionPart": "@(given|when|then)\\(",
+  "cucumberautocomplete.gherkinDefinitionPart": "@(given|when|then|step)\\((?:parsers\\.(?:(?:cf)?parse|re)\\()?",
   "cucumberautocomplete.strictGherkinValidation": false,
   "cucumberautocomplete.smartSnippets": true,
   "cucumberautocomplete.customParameters": [
     {
       "parameter": "{[a-zA-Z0-9_:]+}",
-      "value": ".*"
+      "value": ".*",
+      "isRegex": true
     }
+  ],
+  "cucumber.features": [
+    "features/**/*.feature"
+  ],
+  "cucumber.glue": [
+    "tests/step_defs/**/*.py"
   ],
   "editor.quickSuggestions": {
     "comments": false,
