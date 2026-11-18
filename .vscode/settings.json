@@ -1,0 +1,25 @@
+{
+  "cucumberautocomplete.steps": [
+    "tests/step_defs/**/*.py"
+  ],
+  "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+  "cucumberautocomplete.gherkinDefinitionPart": "@(given|when|then)\\(",
+  "cucumberautocomplete.strictGherkinValidation": false,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.customParameters": [
+    {
+      "parameter": "{[a-zA-Z0-9_:]+}",
+      "value": ".*"
+    }
+  ],
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ],
+  "files.trimTrailingWhitespace": true
+}
